@@ -104,9 +104,10 @@
   line-height: 1.5;
 }
 
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
+.mainSection{
+  display: flex;
+  flex-wrap: wrap-reverse;
+  padding: 2rem;
 }
 
 @media (max-width: 600px) {

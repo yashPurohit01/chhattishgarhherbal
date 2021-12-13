@@ -1,0 +1,6 @@
+#currencyOption{
+    border-style: none;
+}
+#currencyOption::selection{
+       border: none;
+}

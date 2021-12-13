@@ -4,6 +4,10 @@ import React from 'react'
 import style from './header.module.css';
 import { FaShoppingCart } from 'react-icons/fa';
 import { AiOutlineSearch } from 'react-icons/ai';
+import Options from '../options/Options';
+
+const curr = ["INR" , "USD" , "EUR"];
+
 
 function Header() {
     return (
@@ -29,11 +33,14 @@ function Header() {
                         <Link href="/contact"><a>NEWS</a></Link>
                     </div>
                 </div>
-                <div>
-                    <div >
-                        <AiOutlineSearch />
+                <div className={style.cartSection}>
+                    <div  className={`${style.icons} ${style.search}`}>
+                        <Options curr={curr} />
                     </div>
-                    <div>
+                    <div className={`${style.icons} ${style.search}`}>
+                        <AiOutlineSearch style={{fontWeight:"bold"}} />
+                    </div>
+                    <div className={`${style.icons} ${style.cart}`}>
                         <FaShoppingCart />
                     </div>
                 
@@ -51,6 +58,9 @@ function Header() {
                     </div>
                     <div className={style.link}>
                         <Link href="/medproducts"><a>Alternative Medicine</a></Link>
+                    </div>
+                    <div className={style.link}>
+                        <Link href="/medproducts"><a>Gourment Food</a></Link>
                     </div>
                     <div className={style.link}>
                         <Link href="/heathproducts"><a>Health&Personalcare</a></Link>

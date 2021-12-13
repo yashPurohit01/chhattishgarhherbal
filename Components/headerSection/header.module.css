@@ -12,7 +12,7 @@
 }
 .headerContainer .headersectionsecond{
           justify-content: center;
-          background-color: rgb(2, 88, 2);
+          background-color: rgb(6, 75, 6);
           height: 3rem;
           color: white;
           
@@ -20,6 +20,16 @@
 .headerContainer .headersectionsecond .secheadnavs{
     
     display: flex;
+}
+.cartSection{
+    display: flex;
+    align-items: center;
+}
+.cartSection .search{
+    font-weight: bolder;
+}
+.cartSection .icons{
+    margin-right: 1.2rem;
 }
 .options{
     display: flex;
