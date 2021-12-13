@@ -27,9 +27,9 @@ function product() {
           <hr/>
           <div className={styles.products}>
             {
-              array.map(data => {
+              array.map((data , index) => {
                 return (
-                  <div className={styles.product}>
+                  <div className={styles.product} key={index}>
                     <Card />
                   </div>
                 )
