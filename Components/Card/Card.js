@@ -8,7 +8,7 @@ export const Card = ()=>{
                  <Image alt="product" src="/images/amla.jpg" width="150" height="150"/>
              </div>     
              <div className={styles.productDesc}>
-                 <h3>Amala Murabba</h3>
+                 <h3>Amla Murabba</h3>
                  <p>Far far away, behind the word mountains, far from the countries Volkalia & consonantia
                      there live the behind text.
                  </p>
