@@ -4,9 +4,8 @@ import styles from './card.module.css'
 export const Card = ()=>{
     return(
         <div className={styles.productcard}>
-             <div className={styles.productimg}>
-                 <Image alt="product" src="/images/amla.jpg" width="150" height="150"/>
-             </div>     
+                 <Image style={{margin:"auto"}} alt="product" src="/images/amla.png" width="170" height="150"/>
+                  
              <div className={styles.productDesc}>
                  <h3>Amla Murabba</h3>
                  <p>Far far away, behind the word mountains, far from the countries Volkalia & consonantia

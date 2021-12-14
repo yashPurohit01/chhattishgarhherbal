@@ -4,6 +4,9 @@
     flex-direction: column;
     
 }
+.headersection{
+    align-items: center;
+}
 .headerContainer .headersection , .headersectionsecond{
     width: 100%;
     display: flex;
@@ -37,4 +40,20 @@
 }
 .link{
     padding: 2rem;
+}
+
+@media (max-width: 900px) {
+    .headerContainer{
+        border-bottom: 1px solid rgba(128, 128, 128, 0.205);
+    }
+    .logo{
+        width: 10rem;
+        height: 6rem;
+    }
+    .options{
+        display: none;
+    }
+    .headersectionsecond{
+        display: none;
+    }
 }

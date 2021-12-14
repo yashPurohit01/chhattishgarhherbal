@@ -13,8 +13,8 @@ function Header() {
     return (
         <div className={style.headerContainer}>
             <div className={style.headersection}>
-                <div>
-                    <Image src="/images/logo.png" alt="logo" width="200" height="80" quality="100" />
+                <div className={style.logo}>
+                    <Image src="/images/logo.png" alt="logo" width="110" height="70" quality="100" />
                 </div>
                 <div className={style.options}>
                     <div className={style.link} >
@@ -41,7 +41,7 @@ function Header() {
                         <AiOutlineSearch style={{fontWeight:"bold"}} />
                     </div>
                     <div className={`${style.icons} ${style.cart}`}>
-                        <FaShoppingCart />
+                       <Link href='./cart'><a><FaShoppingCart /></a></Link> 
                     </div>
                 
                 </div>

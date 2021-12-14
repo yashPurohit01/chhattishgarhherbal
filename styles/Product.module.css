@@ -23,7 +23,7 @@
 }
 .firstSection{
     display: flex;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
     padding: 2rem;
 }
 .productsheader{
