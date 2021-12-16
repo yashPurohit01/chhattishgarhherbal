@@ -6,9 +6,8 @@ import axios from 'axios'
 
 
 
-const array = [1, 2, 7, 9, 9]
 
-function product() {
+function Product() {
   const [productdata, setproductdata] = useState([]);
 
   useEffect(() => {
@@ -71,4 +70,4 @@ function product() {
   )
 }
 
-export default product
+export default Product
