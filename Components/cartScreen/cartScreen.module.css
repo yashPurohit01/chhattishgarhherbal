@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Lato&display=swap');
+.cartScreen p{
+    margin: 0;
+}
+.cartScreen{
+    width: 100%;
+    padding: 2rem;
+    font-family: 'Lato', serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly
+}
+.cartScreen .cartproductlist .shoppingheading p{
+    margin: 0;
+    font-family: 'Lora', serif;
+    font-size: 2rem;
+}
+.cartproductlist{
+    min-width: 70%;
+  
+
+}
+.cartheader{
+    color:#5ABF6B;
+    font-size: small;
+    line-height: 1.8;
+    font-weight: 700;
+    letter-spacing:.1em
+}
+.hr {
+    border: .1mm solid rgba(158, 158, 158, 0.397);
+    opacity: 0.5;
+}
+.cartsectiongrid{
+    display: grid;
+    grid-template-columns: 60% 20% 10% 10%;
+    padding: 0 1rem 0.5rem 1rem;
+    
+}
+.cartproductquant{
+    /* padding: ; */
+}
+.cartthird{
+    height:15rem ;
+    margin: auto;
+    align-items: center;
+}
+.cartproductDesc{
+    display: grid;
+    grid-template-columns: 30% 50%;
+}
+.cartproductDesc .cartdes{
+    display: grid;
+     grid-template-rows: 25% 25% 25%;
+     font-size: 0.8rem;
+}
+.cartdes strong{
+    margin-left: .3rem;
+}
+.cartproductquant{
+    display: grid;
+    grid-template-rows: 30% 80%;
+    height: 80%;
+}
+.cartproductquant .inc button{
+     border: none;
+     
+     height: 2rem;
+     width: 1.5rem;
+     align-items: flex-end;
+}
+.cartproductquant .inc span{
+    margin: 1rem;
+}
+.cartproductquant .remove button{
+    padding: .5rem;
+    border:none;
+    background-color: rgb(153, 226, 153);
+    color: rgb(11, 65, 11);
+    border-radius: 0.4rem;
+    
+}
+.cartproductquant .remove button:hover{
+    background-color: rgb(16, 78, 16);
+    color: white;
+    cursor: pointer;
+}
+.checkout{
+    display: grid;
+    grid-template-rows: 10%;
+    background-color: whitesmoke;
+    padding: 1.4rem;
+    width: 14rem;
+    font-size: .8rem;
+}
+.ordersummary{
+  margin-bottom: 1rem;
+  font-size: small;
+}
+.checkoutbutt button{
+    background-color: rgb(32, 235, 235);
+    padding: 0.8rem 1rem 0.8rem 1rem;
+    border: none;
+    color: white;
+    transition:all 0.3s ease;
+    width: 100%;
+}
+.checkoutbutt button:hover{
+   background-color: rgb(7, 78, 7);
+}
+.t1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}

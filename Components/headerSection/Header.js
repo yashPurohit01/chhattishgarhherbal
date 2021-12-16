@@ -42,7 +42,7 @@ function Header() {
                     </div>
                     <div className={`${style.icons} ${style.cart}`}>
                        <Link href='./cart'><a><FaShoppingCart /></a></Link> 
-                    </div>
+                    </div>l 
                 
                 </div>
             </div>

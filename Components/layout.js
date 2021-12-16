@@ -8,7 +8,7 @@ export default function layout({ children }) {
         
          <div className="content" style={{ width: "100%" }}>
             <Header  />
-              <div style={{ width: "100%" }}>{children}</div>
+              <div style={{ width: "100%" ,minHeight:"100vh" }}>{children}</div>
             <Footer />
          </div>
       </>
