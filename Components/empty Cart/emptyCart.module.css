@@ -1,0 +1,23 @@
+
+#emptyCart {
+     display: flex;
+     align-items: center;
+     flex-direction:column ;
+     margin-top: 5rem;
+}
+#emptyCart h1{
+    font-family: 'Amiri', serif;
+    color: rgb(184, 24, 24);
+    margin-bottom: 0;
+
+}
+#emptyCart h3{
+
+     max-width: 25rem;
+     letter-spacing: 0.1mm;
+     letter-spacing: 0.1mm;
+     line-height: 1rem;
+     font-weight: 600;
+     font-size: .6rem;
+     opacity: .5;
+}

@@ -10,6 +10,7 @@ import axios from 'axios'
 function Product() {
   const [productdata, setproductdata] = useState([]);
 
+  
   useEffect(() => {
     const url = 'http://localhost:7000/products'
     axios.get(url)
@@ -22,14 +23,16 @@ function Product() {
       .catch(err => {
         console.log(err);
       })
-  }, [productdata])
+  }, [/* productdata  */])
+
   const products = productdata.map((data, index) => {
     return (
       <div className={styles.product} key={index}>
-        <Card productdata = {productdata} index={index}/>
+        <Card productdata ={productdata}  index={index}/>
       </div>
     )
   })
+  
   return (
     <div className={styles.productsections}>
 
@@ -37,7 +40,7 @@ function Product() {
         <Filter />
         <div className={styles.secondSection}>
           <div className={styles.productsheader}>
-            <span>5 Products</span>
+            <span><strong style={{fontSize:"1.5rem"}}>{productdata.length}</strong> Products</span>
 
             <div className={styles.sortfilter}>
               <span>
@@ -47,16 +50,9 @@ function Product() {
           </div>
           <hr />
           <div className={styles.products}>
-         {/*    {
-              productdata.map((data, index) => {
-                return (
-                 
-                )
-              })
-            }
- */}       {
-                 productdata ? 
-                         products :""
+           {
+                /*  productdata ? */ 
+                         products /* :"" */
             }
           </div>
           <div className={styles.loadmore}>

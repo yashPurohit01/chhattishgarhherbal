@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&family=Lato&display=swap');
+
 .cartScreen p{
     margin: 0;
 }
@@ -9,7 +10,9 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap-reverse;
-    justify-content: space-evenly
+    justify-content: space-evenly;
+    align-items: flex-end;
+    
 }
 .cartScreen .cartproductlist .shoppingheading p{
     margin: 0;
@@ -65,7 +68,6 @@
 }
 .cartproductquant .inc button{
      border: none;
-     
      height: 2rem;
      width: 1.5rem;
      align-items: flex-end;
@@ -93,10 +95,12 @@
     padding: 1.4rem;
     width: 14rem;
     font-size: .8rem;
+    height: 15rem;
+    
 }
 .ordersummary{
   margin-bottom: 1rem;
-  font-size: small;
+  
 }
 .checkoutbutt button{
     background-color: rgb(32, 235, 235);

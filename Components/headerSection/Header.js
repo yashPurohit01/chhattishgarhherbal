@@ -41,7 +41,7 @@ function Header() {
                         <AiOutlineSearch style={{fontWeight:"bold"}} />
                     </div>
                     <div className={`${style.icons} ${style.cart}`}>
-                       <Link href='./cart'><a><FaShoppingCart /></a></Link> 
+                       <Link href='/cart'><a><FaShoppingCart /></a></Link> 
                     </div>l 
                 
                 </div>
