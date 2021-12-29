@@ -1,11 +1,10 @@
-import { useState, useEffect } from 'react'
 import { useSelector } from 'react-redux';
 import styles from '../styles/cartScreen.module.css'
 import CartProduct from '../Components/cartProduct/cartProduct'
 import { EmptyCart } from '../Components/empty Cart/EmptyCart';
 
 
-function cart() {
+function Cart() {
     const { cartItems } = useSelector(state => state.cartitems);
     const cartProducts = cartItems.map(product => {
         return (
@@ -93,4 +92,4 @@ function cart() {
     )
 }
 
-export default cart
+export default Cart
