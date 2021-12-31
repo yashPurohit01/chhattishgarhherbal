@@ -27,10 +27,9 @@
 .cartSection{
     display: flex;
     align-items: center;
+    box-sizing: border-box;
 }
-.cartSection .search{
-    font-weight: bolder;
-}
+
 .cartSection .icons{
     margin-right: 1.2rem;
 }

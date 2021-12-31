@@ -1,12 +1,12 @@
-import Image from 'next/image';
+import Logo from '../svgs/logo'
 import Link from 'next/link'
 import React from 'react'
 import style from './header.module.css';
 import { FaShoppingCart } from 'react-icons/fa';
-import { AiOutlineSearch } from 'react-icons/ai';
+import Searchbar from '../searchbar/search';
 import Options from '../options/Options';
 
-const curr = ["INR" , "USD" , "EUR"];
+const curr = ["INR", "USD", "EUR"];
 
 
 function Header() {
@@ -14,7 +14,7 @@ function Header() {
         <div className={style.headerContainer}>
             <div className={style.headersection}>
                 <div className={style.logo}>
-                    <Image src="/images/logo.png" alt="logo" width="110" height="70" quality="100" />
+                    <Logo />
                 </div>
                 <div className={style.options}>
                     <div className={style.link} >
@@ -34,16 +34,19 @@ function Header() {
                     </div>
                 </div>
                 <div className={style.cartSection}>
-                    <div  className={`${style.icons} ${style.search}`}>
+                    <div className={`${style.icons} ${style.search}`}>
+                        {/*    <AiOutlineSearch style={{fontWeight:"bold"}} /> */}
+                        <Searchbar />
+                    </div>
+                    
+                    <div className={`${style.icons} ${style.search}`}>
                         <Options curr={curr} />
                     </div>
-                    <div className={`${style.icons} ${style.search}`}>
-                        <AiOutlineSearch style={{fontWeight:"bold"}} />
-                    </div>
+
                     <div className={`${style.icons} ${style.cart}`}>
-                       <Link href='/cart'><a><FaShoppingCart /></a></Link> 
-                    </div>l 
-                
+                        <Link href='/cart'><a><FaShoppingCart /></a></Link>
+                    </div>
+
                 </div>
             </div>
             <div className={style.headersectionsecond}>

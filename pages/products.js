@@ -3,32 +3,30 @@ import styles from '../styles/Product.module.css'
 import { Filter } from '../Components/filter/Filter'
 import { Card } from '../Components/Card/Card'
 import axios from 'axios'
+import { useSelector , useDispatch} from 'react-redux'
+import { ProductsAction } from '../redux/actions/ProductsActions'
 
 
 
 
 function Product() {
-  const [productdata, setproductdata] = useState([]);
+  const {products} = useSelector(state => state.productslist);
+  const dispatch = useDispatch()
+ /*  const [productdata, setproductdata] = useState([]); */
 
-  
   useEffect(() => {
-    const url = 'http://localhost:7000/products'
-    axios.get(url)
-      .then(res => {
-        console.log(res.data)
-        const Products = res.data.result;
-        console.log(Products);
-        setproductdata(Products)
-      })
-      .catch(err => {
-        console.log(err);
-      })
-  }, [/* productdata  */])
+   /*  */
+   dispatch(ProductsAction())
+      console.log(products);
+      console.log("hello")
+  }, [])
 
-  const products = productdata.map((data, index) => {
+
+
+  const productLists = products && products.map((data, index) => {
     return (
       <div className={styles.product} key={index}>
-        <Card productdata ={productdata}  index={index}/>
+        <Card data ={data}  index={index}/>
       </div>
     )
   })
@@ -40,7 +38,7 @@ function Product() {
         <Filter />
         <div className={styles.secondSection}>
           <div className={styles.productsheader}>
-            <span><strong style={{fontSize:"1.5rem"}}>{productdata.length}</strong> Products</span>
+            <span><strong style={{fontSize:"1.5rem"}}>{products.length}</strong> Products</span>
 
             <div className={styles.sortfilter}>
               <span>
@@ -51,8 +49,8 @@ function Product() {
           <hr />
           <div className={styles.products}>
            {
-                /*  productdata ? */ 
-                         products /* :"" */
+                 products ? 
+                         productLists  :"" 
             }
           </div>
           <div className={styles.loadmore}>

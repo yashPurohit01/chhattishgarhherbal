@@ -1,6 +1,7 @@
 .container {
-  padding: 0 2rem;
+
   min-height: 80vh;
+  font-family: 'Lato' ,serif;
 }
 
 .main {
@@ -115,4 +116,329 @@
     width: 100%;
     flex-direction: column;
   }
+}
+
+.hero {
+  min-height: 30rem;
+  margin: 0px;
+  background-image: url('/images/banner.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-left: 13%;
+  padding-top: 2rem;
+
+}
+.hero_h {
+  font-size: 70px;
+  color: white;
+  margin: 0;
+  font-family: 'Lato' ,sans-serif;
+  word-spacing: 0.05mm;
+}
+.hero_inner {
+  margin-top: 50px;
+  padding: 1rem;
+}
+.hero_p {
+  font-size: .9rem;
+  color: white;
+  font-family: 'Nunto' ,sans-serif;
+  line-height: 6mm;
+}
+.hero_btn {
+  padding: 13px 23px;
+  color: rgb(5, 85, 5);
+  font-size: 17px;
+  background-color: rgb(208, 248, 208);
+  border: none;
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+.hero_btn:hover {
+  color: white;
+  background-color: green;
+  border-radius: 7px;
+  transition: 0.5s;
+}
+.featured {
+  background-color: white;
+  margin:0px;
+  text-align: center;
+}
+.featured h1 {
+font-size: 45px;
+margin-top: 80px;
+}
+.hr {
+  height: 1.3px;
+  background-color: grey;
+  width: 40px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 2rem;
+ 
+}
+.hr_f {
+  height: 1.3px;
+  background-color: grey;
+  width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+.home_product_image{
+  cursor: pointer;
+}
+.home_product_image:hover{
+  transform: scale(1.08);
+  transition: 0.3s;
+  height: fit-content;
+  border-radius: 50%;
+}
+
+.img_f {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+}
+.img_f:hover {
+
+  transition: 0.5s;
+}
+.p {
+  font-size: 23px;
+}
+.featured_wrap {
+  display: flex;
+  text-align: center;
+}
+.featured_item {
+  display: inline-block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.f_images {
+  display: flex;
+}
+.f_left, .f_right {
+  width: 250px;
+  margin: 30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.flex_center {
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.img_box {
+  width: 251px;
+  height: 200px;
+  background-image: url("/images/goumet.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 0px;
+}
+.img_box_center {
+  width: 510px;
+  height: 510px;
+  background-image: url("/images/goumet.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 0px;
+}
+.f_box {
+  border: 1px solid grey;
+  overflow: hidden;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.f_box_center {
+  border: 1px solid grey;
+  overflow: hidden;
+  text-align: left;
+  margin-top: 30px;
+}
+.img_boxh {
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: 8px;
+}
+.img_box_h_center {
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: 8px;
+}
+.img_box_p {
+  font-size: 18px;
+  color: grey;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+.img_box_p_center {
+  font-size: 18px;
+  color: grey;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+.img_box_pp {
+  font-size: 18px;
+  color: grey;
+  display: inline;
+  float: right;
+  margin-top: -34px;
+  margin-right: 7px;
+}
+.f-images_wrap {
+  text-align: center;
+}
+.featred_btn {
+  text-align: center;
+}
+.community {
+  background-image: url("/images/BG.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 500px;
+  margin:0px;
+  text-align: center;
+  font-family: 'Lora', serif;
+}
+.community_follow {
+  background-image: url("/images/hero.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 300px;
+  margin:0px;
+  text-align: center;
+}
+.community_inner {
+  padding-top: 100px;
+  margin-top: 100px;
+}
+.community_inner_follow {
+  padding-top: 130px;
+  margin-top: 50px;
+}
+.community_inner p {
+  font-size: 25px;
+  color: white;
+  margin-top: 50px;
+}
+.community_inner h1 {
+  font-size: 60px;
+  color: white;
+  margin-top: 30px;
+}
+.thecom h1 {
+font-family: 'loro';
+ margin-top: 2rem;
+
+}
+.thecom {
+  background-color: white;
+  margin:0px;
+  text-align: center;
+
+  
+}
+.community_des{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+
+}
+.thecom_inner {
+  display: flex;
+}
+.thecom p {
+  width: 100%;
+  font-size: 1rem;
+  color: grey;
+  max-width: 35rem;
+  text-align: center;
+  line-height: .7cm;
+  margin: 0;
+
+}
+.thecom_box {
+  background-image: url("/images/goumet.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 350px;
+  height: 350px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  text-align: center;
+}
+.thecom_box h1 {
+  color: white;
+  margin-top: 30%;
+  margin-bottom: 50%;
+  display: none;
+}
+.thecom_box:hover h1 {
+  display: block;
+  transition: 0.7s;
+}
+.thecom_box:hover {
+  opacity:0.7;
+  background-color:black;
+}
+.amazon {
+  background-color: gainsboro;
+  display: flex;
+  text-align: center;
+}
+.amazon_text {
+  font-size: 30px;
+  font-weight: 500;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  flex: 80%;
+}
+.footer {
+  background-color: white;
+  margin:0px ;
+  border-top: 1px solid gainsboro;
+  display: flex;
+  vertical-align: middle;
+}
+.logo_f {
+  width: 300px;
+  margin-left: 60px;
+  padding: 50px;
+}
+.link_f {
+  padding-top: 50px;
+  width: 200px;
+}
+.link_f p {
+  color: grey;
+  font-size: 16px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.soc {
+  font-size: 23px;
+  font-weight: 600;
+  padding: 8px;
+}
+.copy {
+  margin:0px;
+  background-color: black;
+  padding: 20px 40px;
+  text-align: center;
+  color: white;
+  font-size: 18px;
 }
