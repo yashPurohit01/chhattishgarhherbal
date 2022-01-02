@@ -1,6 +1,51 @@
+import { useEffect, useState } from 'react'
 import style from './filter.module.css'
 
-export const Filter = () => {
+
+const categroyList = [
+    {
+        display_name: "Grocery & Gourmet",
+        id: "grocerygourmet"
+    },
+    {
+        display_name: "Beauty Products",
+        id: "beautyproducts"
+    },
+    {
+        display_name: "Alternative Medicine",
+        id: "medicine"
+    },
+    {
+        display_name: "Health & Personal Care",
+        id: "healthpersonalcare"
+    }
+]
+
+export const Filter = ({ filtervalue, setfilterValue }) => {
+    
+    const onChangeHandler = (e) => {
+        const { id, checked } = e.target
+        setfilterValue(pre => {
+            if (checked) {
+                return (
+                    {
+                        ...pre,
+                        [id]: true,
+                    }
+                )
+
+            }
+            else {
+                return ({
+                    ...pre,
+                    [id]: false,
+                })
+            }
+        })
+
+
+    }
+
     return (
         <div className={style.filterContainer}>
             <div className={style.filterHeader}>
@@ -10,34 +55,23 @@ export const Filter = () => {
             </div>
 
             <div className={style.filterOptions}>
-                {/*  <div className={style.option} >
-                    <input type="checkbox" value="Grocery & Gourmet Food" /> <label>Grocery & Gourmet</label>
-                </div>
-                <div className={style.option}>
-                    <input type="checkbox" value="Beauty Products" /> <label>Beauty Products</label>
-                </div>
-                <div className={style.option}>
-                    <input type="checkbox" value="Alternative Medicine" /><label>Alternative Medicine </label>
-                </div>
-                <div className={style.option}>
-                    <input type="checkbox" value="Health & Personal Care" /> <label>Health & Personal Care</label>
-                </div> */}
-                <label className={style.container}>Grocery & Gourmet
-                    <input type="checkbox" defaultChecked/>
-                        <span className={style.checkmark}></span>
-                </label>
-                <label className={style.container}>Beauty Products
-                    <input type="checkbox"/>
-                        <span className={style.checkmark}></span>
-                </label>
-                <label className={style.container}>Alternative Medicine
-                    <input type="checkbox"/>
-                        <span className={style.checkmark}></span>
-                </label>
-                <label className={style.container}>Health & Personal Care
-                    <input type="checkbox"/>
-                        <span className={style.checkmark}></span>
-                </label>
+                {
+                    categroyList.map(val => {
+                        return (
+                            <div key={val.id}>
+                                <label className={style.container}>{val.display_name}
+                                    <input id={val.id}
+                                        type="checkbox"
+                                        value={val.display_name}
+                                        data-category={val.id}
+                                        onChange={onChangeHandler} />
+                                    <span className={style.checkmark}></span>
+                                </label>
+                            </div>
+                        )
+                    })
+                }
+              
 
 
             </div>

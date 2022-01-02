@@ -66,7 +66,7 @@ function Header() {
                         <Link href="/medproducts"><a>Gourment Food</a></Link>
                     </div>
                     <div className={style.link}>
-                        <Link href="/heathproducts"><a>Health&Personalcare</a></Link>
+                        <Link href="/heathproducts"><a>Health & Personalcare</a></Link>
                     </div>
 
                 </div>
