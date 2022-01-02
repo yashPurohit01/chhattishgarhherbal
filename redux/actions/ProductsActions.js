@@ -4,8 +4,8 @@ import { PRODUCTS_REQUEST_FAIL, PRODUCTS_REQUEST_SUCCESS } from "../constant"
 
 
 export const ProductsAction = () => (dispatch) =>{
-     const ProductUrl = "https://cgherbalbackend.herokuapp.com/products"
-     axios.get(ProductUrl)
+     const Url = "https://cgherbalbackend.herokuapp.com/products"
+     axios.get(Url)
      .then(res =>{
          console.log(res)
           
