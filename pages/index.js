@@ -17,19 +17,19 @@ export default function Home() {
         <div className={styles.featured_wrap}>
           <div className={styles.featured_item}>
 
-            <div className={styles.home_product_image}><Image width="200" height="200" src="/images/goumet.jpg" className={styles.img_f} /></div>
+            <div className={styles.home_product_image}><Image width="200" height="200" src="/images/goumet.jpg" alt="grocery" className={styles.img_f} /></div>
             <p className={styles.p}>Gourmet Foods</p>
           </div>
           <div className={styles.featured_item}>
-            <div className={styles.home_product_image}><Image width="200" height="200" src="/images/beuti.jpg" className={styles.img_f} /></div>
+            <div className={styles.home_product_image}><Image width="200" height="200" src="/images/beuti.jpg" alt="beauty prodcut "className={styles.img_f} /></div>
             <p className={styles.p}>Beauty Products</p>
           </div>
           <div className={styles.featured_item}>
-            <div className={styles.home_product_image}><Image width="200" height="200" src="/images/alter.jpg" className={styles.img_f} /></div>
+            <div className={styles.home_product_image}><Image width="200" height="200"  alt="medicine" src="/images/alter.jpg" className={styles.img_f} /></div>
             <p className={styles.p}>Alternative Medicines</p>
           </div>
           <div className={styles.featured_item}>
-            <div className={styles.home_product_image}><Image width="200" height="200" src="/images/healthy.jpg" className={styles.img_f} /></div>
+            <div className={styles.home_product_image}><Image width="200" height="200" alt="perosnal product" src="/images/healthy.jpg" className={styles.img_f} /></div>
             <p className={styles.p}>Personal Health</p>
           </div>
         </div>

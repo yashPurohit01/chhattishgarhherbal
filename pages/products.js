@@ -24,7 +24,7 @@ function Product() {
 
   useEffect(() => {
 
-    dispatch(ProductsAction(filtervalue));
+    dispatch(ProductsAction());
 
 
   }, [])
